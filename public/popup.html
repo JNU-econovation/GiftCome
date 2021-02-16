@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>졸업식 선물 추천</title>
+    <script language="javascript">
+      function movePage(){
+        window.opener.top.location.href="http://localhost:3000/create";
+        window.close();
+      }
+      function pop(n){
+        window.opener.top.location.href="http://localhost:3000/pop/"+n;
+        window.close();
+      }
+    </script>
+     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "나눔스퀘어OTF_ac", sans-serif;
+        width: 370px;
+        height: 330px;
+        border: 1px solid black;
+      }
+      #theme {
+        padding: 20px 20px 20px 70px;
+      }
+      #content {
+        width: 320px;
+        margin: 0 auto;
+        height: 160px;
+        position: relative;
+      }
+      a {
+          color: black;
+          text-decoration: none;
+
+      }
+      img {
+        border: 0;
+      }
+      .keyword {
+        float: left;
+        padding: 0 20px 0 20px;
+      }
+      .keyword > p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        float: left;
+        padding: 3px 2px 3px 2px;
+      }
+      .keyword > p > a {
+        display: block;
+        border: 1px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 5px 10px 5px 10px;
+      }
+      .keyword > p > a:hover {
+        background: #d6af7c;
+        color: white;
+      }
+      #search{
+        float:left;
+        padding-left:85px;
+      }
+      #search > p {
+        padding-bottom:5px;
+      }
+      #search > ul {
+        overflow: hidden;
+        float: left;
+        padding-left:20px;
+      }
+      
+      #search > ul > li {
+        float: left;
+        list-style:none;
+      }
+      #search > ul > li > a {
+        display: block;
+        border: 1px solid #d6af7c;
+        border-radius: 10px;
+        font-size: 25px;
+        padding: 5px 10px 5px 10px;
+      }
+      #search > ul > li > a:hover {
+        background: #d6af7c;
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1 id = "theme">졸업식 선물 추천</h1>
+    <div id ="content">
+      <hr></hr>
+      <br>
+      <div class="keyword">
+        <p><a href="javascript:pop(&quot;1&quot;);">#향수</a></p>
+        <p><a href="javascript:pop(&quot;2&quot;);">#쥬얼리</a></p>
+        <p><a href="javascript:pop(&quot;3&quot;);">#서류가방</a></p>
+        <p><a href="javascript:pop(&quot;4&quot;);">#핸드백</a></p>
+        <p><a href="javascript:pop(&quot;5&quot;);">#텀블러</a></p>
+        <p><a href="javascript:pop(&quot;6&quot;);">#벨트</a></p>
+        <p><a href="javascript:pop(&quot;7&quot;);">#구두</a></p>
+        <p><a href="javascript:pop(&quot;8&quot;);">#손목시계</a></p>
+        <p><a href="javascript:pop(&quot;9&quot;);">#꽃다발</a></p>
+      </div>
+    </div>
+    <nav id="search">
+      <p>더 다양한 선물을 보고 싶다면?</p>
+      <ul>
+        <li><a href="javascript:movePage();">→ 찾아보기</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

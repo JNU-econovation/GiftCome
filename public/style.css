@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "나눔스퀘어OTF_ac", sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  width: 500px;
+}
+#main_header {
+  width: 960px;
+  margin: 0 auto;
+  height: 300px;
+  position: relative;
+}
+#main_header > #title {
+  position: absolute;
+  left: 250px;
+  top: 70px;
+}
+#main_header > #main_gnb {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#main_header > #main_selectOption {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  bottom: 10px;
+}
+#content > hr {
+  border-color: #d6af7c;
+}
+#main_gnb > ul {
+  overflow: hidden;
+}
+#main_gnb > ul > li {
+  float: left;
+}
+#main_gnb > ul > li > a {
+  display: block;
+  padding: 2px 10px;
+  border: 1px solid #d6af7c;
+}
+#main_gnb > ul > li > a:hover {
+  background: #d6af7c;
+  color: white;
+}
+#main_selectOption > ul {
+  overflow: hidden;
+}
+#main_selectOption > ul > li {
+  float: left;
+}
+#main_selectOption > ul > li > a {
+  display: block;
+  padding: 30px 440px 30px 440px;
+  border: 1px solid #d6af7c;
+  border-radius: 10px;
+  font-size: 20px;
+}
+#main_selectOption > ul > li > a:hover {
+  background: #d6af7c;
+  color: white;
+}
+#content {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#content > li {
+  font-size: 20px;
+  padding: 0 0 10px 10px;
+  font-weight: bold;
+}
+#content > p {
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
+}
+#main_section > article.main_article {
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 1px solid black;
+}
+section.buttons {
+  overflow: hidden;
+}
+.item {
+  display: inline-block;
+  overflow: hidden;
+  padding: 10px;
+  border-top: none;
+  width: 167px;
+  height: 400px;
+}
+.thumbnail {
+  float: left;
+}
+.description {
+  float: left;
+  margin: 5px;
+}
+.description > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.description > strong {
+  display: block;
+  width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.authorSelect {
+  border-collapse: collapse;
+  float: left;
+  width: 240px;
+}
+.authorSelect > tbody > tr {
+  border-top: 1pt solid black;
+  border-bottom: 1pt solid black;
+}
+#mypage > div {
+  display: inline-block;
+  overflow: hidden;
+  width: 317px;
+  height: 317px;
+}
+#mypage > div:hover {
+  background-color: #d6af7c;
+}
+#mypage > div > a {
+  float: left;
+  font-size: 18px;
+  text-align: center;
+  width: 140px;
+  padding: 141px 89px;
+}
+#mypage > div > a:hover {
+  color: white;
+}
+#mypage > div > p {
+  float: left;
+  font-size: 18px;
+  text-align: center;
+  width: 140px;
+  padding: 40px 50px 20px 50px;
+}
+#myWishList {
+  float: left;
+  margin: 40px;
+}
+#manageWish {
+  display: inline-block;
+}
+#wishList {
+  float: left;
+  padding: 50px 100px 50px 150px;
+}
+#wishList > p {
+  font-size: 14pt;
+  text-align: center;
+  padding: 10px;
+}
+#addWish {
+  float: left;
+  padding: 50px;
+}
+#askWish {
+  font-size: 14pt;
+  text-align: center;
+  padding: 10px;
+}
+#insertWish {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  margin: 5px;
+}
+#submitWish {
+  padding: 5px;
+  margin: 0 0 0 287px;
+}
+.authorTable {
+  border-collapse: collapse;
+  margin: 50px 270px;
+  display: inline-block;
+}
+.authorTable > tbody > tr {
+  border-top: 0.8pt solid #d6af7c;
+  border-bottom: 0.8pt solid #d6af7c;
+}
+#friendName {
+  padding: 10px 20px;
+  text-align: center;
+}
+#friendWish {
+  padding: 10px 240px 10px 10px;
+}
+#write {
+  font-size: 14pt;
+  text-align: center;
+  float: right;
+  padding: 10px 30px 20px 0;
+}
+.board {
+  border-collapse: collapse;
+  display: inline-block;
+  margin: 0px 0px 80px 50px;
+}
+.board > tbody > tr {
+  border-top: 0.8pt solid #d6af7c;
+  border-bottom: 0.8pt solid #d6af7c;
+}
+.board > tbody > tr > td {
+  padding: 20px 700px 20px 20px;
+}
+#postTitle {
+  width: 700px;
+  height: 20px;
+  padding: 10px;
+  margin: 0px 117px 20px;
+}
+#postDesc {
+  width: 700px;
+  height: 300px;
+  padding: 10px;
+  margin: 0 117px;
+}
+#submitPost {
+  padding: 5px;
+  margin: 10px 20px 20px 785px;
+}
+.postMenu > a {
+  font-size: 14pt;
+  text-align: center;
+  float: right;
+  padding: 10px 30px 20px 0;
+}
+#deletePost {
+  margin: 10px 20px 20px 900px;
+}
+.posting {
+  margin: 70px 80px 20px 80px;
+}
+.posting > p {
+  padding: 20px;
+}
+.editPost > a {
+  margin-left: 900px;
+}
+#writer {
+  text-align: right;
+}
+#paging {
+  display: block;
+  width: 75px;
+  overflow: hidden;
+  float: left;
+  padding: 10px 0 10px 700px;
+}
+#paging > p {
+  float: left;
+  width: 15px;
+}
+#paging > p > a:hover {
+  color: #d6af7c;
+  text-decoration: underline;
+  text-decoration-color: #d6af7c;
+}
+.main_footer > h3 {
+  float: left;
+  padding: 100px 0 0 700px;
+  width: auto;
+}
+.main_footer > address {
+  float: left;
+  padding: 10px 0 10px 675px;
+  width: 120px;
+}
+.jjim {
+  position: absolute;
+  text-align: center;
+  font-family: "나눔스퀘어OTF_ac", sans-serif;
+  display: inline-block;
+  margin: 1px;
+  text-decoration: none;
+  border: 1.5px solid #d6af7c;
+  border-radius: 4px;
+  padding: 2px 2px;
+  color: #d6af7c;
+  width: 50px;
+  height: 30px;
+}
+
+.jjim:hover {
+  background: #d6af7c;
+  color: white;
+}
+.check_button {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  font-family: "나눔스퀘어OTF_ac", sans-serif;
+  margin: 10px;
+  text-decoration: none;
+  border: 1.5px solid #d6af7c;
+  border-radius: 4px;
+  padding: 2px 2px;
+  color: #d6af7c;
+  width: 50px;
+  height: 30px;
+}
+.check_button:hover {
+  background: #d6af7c;
+  color: white;
+}
+.check_input {
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+}
+.login {
+  display: inline-block;
+  padding: 10px 440px 10px 440px;
+}
+.login_input {
+  float: left;
+  padding: 100px 10px 100px 370px;
+}
+.login_button {
+  display: inline-block;
+  padding: 85px 0px 10px 10px;
+}
+.register_input {
+  display: inline-block;
+  padding: 30px 440px 10px 400px;
+}
+.register_button {
+  display: inline-block;
+  padding: 10px 440px 50px 440px;
+}
+#register {
+  margin-top: 120px;
+}
+.button {
+  position: absolute;
+  float: left;
+  text-align: center;
+  font-family: "나눔스퀘어OTF_ac", sans-serif;
+  display: inline-block;
+  margin: 1px;
+  text-decoration: none;
+  border: 1.5px solid #d6af7c;
+  border-radius: 4px;
+  padding: 3px 3px;
+  color: #d6af7c;
+  width: 60px;
+  height: 30px;
+}
+
+.button:hover {
+  background: #d6af7c;
+  color: white;
+}
